@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>  
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            gap: 20px;
+        }
+
+        canvas {
+            border: 2px solid #333;
+        }   
+
+        #title {
+            font-size: 36px;
+            color: #333;
+        }
+
+        #score {
+            font-size: 24px;
+            color: #333;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        #instructions {
+            font-size: 18px;
+            color: #333;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 500px;
+        }
+
+        #instructions h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        /* Reset position and transform for title, score, and instructions */
+        #title, #score, #instructions {
+            position: static;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Game title -->
+    <div id="title">Snake Game</div>
+
+    <!-- Game instructions -->
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <ul>
+            <li>Use the arrow keys to move the snake.</li>
+            <li>Eat the food to grow and increase your score.</li>
+            <li>Avoid the obstacles and don't run into yourself!</li>
+        </ul>
+    </div>
+    
+    <!-- Score display -->
+    <div id="score">Score: 0</div>    
+
+    <!-- Include the JavaScript file -->
+    <script src="snake.js"></script>
+</body>
+</html>
